@@ -1,0 +1,77 @@
+[
+  {
+    "img": "images/milk.png",
+    "title": "Milk",
+    "color": "#C5E4F8"
+  },
+  {
+    "img": "images/butter.png",
+    "title": "Butter",
+    "color": "#C5E4F8"
+  },
+  {
+    "img": "images/melon.png",
+    "title": "Melon",
+    "color": "#F3CE80"
+  },
+  {
+    "img": "images/corn.png",
+    "title": "Corn",
+    "color": "#F3CE80"
+  },
+  {
+    "img": "images/donuts.png",
+    "title": "Donuts",
+    "color": "#F3AAD2"
+  },
+  {
+    "img": "images/onions.png",
+    "title": "Onion",
+    "color": "#9AD586"
+  },
+  {
+    "img": "images/cauliflower.png",
+    "title": "Cauliflower",
+    "color": "#9AD586"
+  },
+  {
+    "img": "images/spinach.png",
+    "title": "Spinach",
+    "color": "#9AD586"
+  },
+  {
+    "img": "images/croissan.png",
+    "title": "Croissan",
+    "color": "#CDC8BF"
+  },
+  {
+    "img": "images/ham.png",
+    "title": "Ham",
+    "color": "#E88798"
+  },
+  {
+    "img": "images/salmon.png",
+    "title": "Salmon",
+    "color": "#E88798"
+  },
+  {
+    "img": "images/hazelnut.png",
+    "title": "Hazelnuts",
+    "color": "#fcf2cf"
+  },
+  {
+    "img": "images/walnut.png",
+    "title": "Walnut",
+    "color": "#fcf2cf"
+  },
+  {
+    "img": "images/melon.png",
+    "title": "Melon",
+    "color": "#F3CE80"
+  },
+  {
+    "img": "images/corn.png",
+    "title": "Corn",
+    "color": "#F3CE80"
+  }                  
+]

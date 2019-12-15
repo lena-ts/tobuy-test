@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>ToBuy - Shopping Companion</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="scss/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+<!--   <div class="like_button_container" data-commentid="1"></div> -->
+	<ul class="nav nav-tabs" id="listTabs" role="tablist">
+		<li class="nav-item">
+		    <a class="nav-link active" id="today-list" data-toggle="tab" href="#today" role="tab" aria-controls="today" aria-selected="true">Today's List <small style="color:#3CBB6E; margin-left: 4px;">16</small></a>
+		</li>
+	   <li class="nav-item">
+	    <a class="nav-link" id="recent-list" data-toggle="tab" href="#recent" role="tab" aria-controls="recent" aria-selected="false">Recent</a>
+	   </li>
+	</ul>
+	<div class="tab-content" id="listContent">
+	  <div class="tab-pane fade show active" id="today" role="tabpanel" aria-labelledby="today-list">
+	      <div class=" text-center items items-list">
+		  <ul class="row"></ul>
+	      </div>  		  
+	  </div>
+	  <div class="tab-pane fade" id="recent" role="tabpanel" aria-labelledby="recent-list">
+	      <div class=" text-center recent-items items-list">
+		  <ul class="row">
+			  <li>
+				  <div>
+				  	<img src="images/salmon.png">
+				  	<div class="shadow"></div>				  
+				  </div>
+				  <h4>Salmon</h4>
+			  </li>
+		  </ul>
+	      </div> 		  
+	  </div>
+	</div>
+	
+	<div class="footer-panel">
+		<div class="footer-panel-toggle">
+			<svg width="39" height="13" viewBox="0 0 39 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<rect y="8.76996" width="22.164" height="4.02155" rx="2.01077" transform="rotate(-23.2775 0 8.76996)" fill="#E9E9E9"/>
+			<rect x="18.7266" width="21.4486" height="4.01222" rx="2.00611" transform="rotate(23.8 18.7266 0)" fill="#EBEBEB"/>
+			</svg>			
+		</div>
+		<div class="search">
+			<input class="form-control" type="text" placeholder="Search products" aria-label="Search">
+		</div>
+		<div class="category-list">
+			<div class="category-item" data-category="fish">
+				  <div class="category-item-image">
+				  	<img src="images/salmon.png">		  
+				  </div>
+				  <h4>Fish</h4>				
+			</div>
+			<div class="category-item" data-category="fish">
+				  <div class="category-item-image">
+				  	<img src="images/salmon.png">		  
+				  </div>
+				  <h4>Fish</h4>				
+			</div>
+			<div class="category-item" data-category="fish">
+				  <div class="category-item-image">
+				  	<img src="images/salmon.png">		  
+				  </div>
+				  <h4>Fish</h4>				
+			</div>
+			<div class="category-item" data-category="fish">
+				  <div class="category-item-image">
+				  	<img src="images/salmon.png">		  
+				  </div>
+				  <h4>Fish</h4>				
+			</div>
+			<div class="category-item" data-category="fish">
+				  <div class="category-item-image">
+				  	<img src="images/salmon.png">		  
+				  </div>
+				  <h4>Fish</h4>				
+			</div>
+			<div class="category-item" data-category="fish">
+				  <div class="category-item-image">
+				  	<img src="images/salmon.png">		  
+				  </div>
+				  <h4>Fish</h4>				
+			</div>																		
+			<div class="category-item" data-category="fish">
+				  <div class="category-item-image">
+				  	<img src="images/salmon.png">		  
+				  </div>
+				  <h4>Fish</h4>				
+			</div>
+		</div>
+	</div>
+
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.slim.min.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+    <!-- Load React. -->
+    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->  
+<!--
+   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>  
+   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+-->
+   
+    <!-- Load our React component. -->
+<!--     <script src="js/like_button.js"></script>    -->
+  
+  <script>
+	  var listWrapper = document.querySelector('.items ul');
+	  
+	  var requestURL = 'items.json';
+	  var request = new XMLHttpRequest();
+    
+	  request.open('GET', requestURL);
+	  request.responseType = 'json';
+	  request.send();    
+	
+	  request.onload = function() {
+	 	 var itemsList = request.response;
+	 	 populateItems(itemsList, removeItem);
+		}	 
+  	       
+	function populateItems(jsonObj, callback) {	       
+       for (var i = 0; i < jsonObj.length; i++) {
+		  var itemItem = document.createElement('li'),
+		  	  itemImageWrapper = document.createElement('div');
+		      itemName = document.createElement('h4'),
+		      itemShadow = document.createElement('div'),
+		  	  itemImage = document.createElement('img');	  		  	  
+		  	  	
+		  	  itemItem.className = "item col-xs-4 col-sm-4 col-md-4";
+		  	  itemShadow.className = "shadow";	
+		  	  
+		      itemName.textContent = jsonObj[i].title;
+		      itemImage.src = jsonObj[i].img;	
+		      
+		      itemImageWrapper.appendChild(itemImage);
+		      itemImageWrapper.appendChild(itemShadow);
+		      itemItem.appendChild(itemImageWrapper);	
+		      itemItem.appendChild(itemName);	
+		      itemImageWrapper.style.background = jsonObj[i].color;
+		      itemShadow.style.background = jsonObj[i].color;
+		      
+		      listWrapper.appendChild(itemItem);        
+       }	
+       
+       callback();
+	} 
+	function removeItem(list) {	
+		
+		for (i = 0; i <= $('.items .item').length - 1; i++) {
+			var current = $('.items .item').eq(i);
+			current.attr('data-index', i);
+			
+			
+			console.log(current, $('.items .item').length);
+
+			
+			function showMessage() {
+				$('.empty-bag').fadeIn();
+			}
+		}
+		
+			$('.items .item').click(function(i){
+				$(this).fadeOut('slow');
+				$('#recent .recent-items ul').prepend($(this).clone());
+			});		
+		
+	}
+		
+	function insertItem() {
+		$('.items .item').eq(4).insertAfter($('.items .item').eq(7))
+	}
+	
+	$('.footer-panel-toggle').click(function(){
+		$('.footer-panel').toggleClass('up');
+	});
+
+  </script>  
+
+</body>
+
+</html>

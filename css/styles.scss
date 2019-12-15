@@ -1,0 +1,36 @@
+//variables
+$header-bg: #e8ebf2;
+$color-pink: #F84E76;
+$color-yellow: #F8C84E;
+$color-blue: #3361F8;
+$color-green: #80D7A3;
+$color-purple: #AE70DE;
+
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+@mixin transition($property) {
+  -webkit-transition: $property;
+  -ms-transition: $property;
+  transition: $property;
+}
+
+@mixin box-shadow($property) {
+  -webkit-box-shadow: $property;
+  -ms-box-shadow: $property;
+  box-shadow: $property;
+}
+
+@mixin border-radius($property) {
+  -webkit-border-radius: $property;
+  -ms-border-radius: $property;
+  border-radius: $property;
+}
+
+body {
+	background: pink;
+}
