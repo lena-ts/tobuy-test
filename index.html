@@ -58,48 +58,7 @@
 			<input class="form-control" type="text" placeholder="Search products" aria-label="Search">
 		</div>
 		<div class="category-list">
-			<div class="category-item" data-category="fish">
-				  <div class="category-item-image">
-				  	<img src="images/salmon.png">		  
-				  </div>
-				  <h4>Fish</h4>				
-			</div>
-			<div class="category-item" data-category="fish">
-				  <div class="category-item-image">
-				  	<img src="images/salmon.png">		  
-				  </div>
-				  <h4>Fish</h4>				
-			</div>
-			<div class="category-item" data-category="fish">
-				  <div class="category-item-image">
-				  	<img src="images/salmon.png">		  
-				  </div>
-				  <h4>Fish</h4>				
-			</div>
-			<div class="category-item" data-category="fish">
-				  <div class="category-item-image">
-				  	<img src="images/salmon.png">		  
-				  </div>
-				  <h4>Fish</h4>				
-			</div>
-			<div class="category-item" data-category="fish">
-				  <div class="category-item-image">
-				  	<img src="images/salmon.png">		  
-				  </div>
-				  <h4>Fish</h4>				
-			</div>
-			<div class="category-item" data-category="fish">
-				  <div class="category-item-image">
-				  	<img src="images/salmon.png">		  
-				  </div>
-				  <h4>Fish</h4>				
-			</div>																		
-			<div class="category-item" data-category="fish">
-				  <div class="category-item-image">
-				  	<img src="images/salmon.png">		  
-				  </div>
-				  <h4>Fish</h4>				
-			</div>
+			<ul></ul>
 		</div>
 	</div>
 
@@ -190,6 +149,44 @@
 	$('.footer-panel-toggle').click(function(){
 		$('.footer-panel').toggleClass('up');
 	});
+	
+	var categoryList = document.querySelector('.category-list ul');
+	  var requestCatURL = 'categories.json';
+	  var requestCat = new XMLHttpRequest();
+    
+	  requestCat.open('GET', requestCatURL);
+	  requestCat.responseType = 'json';
+	  requestCat.send();    
+	
+	  requestCat.onload = function() {
+	 	 var categoryList = requestCat.response;
+	 	 populateCats(categoryList);
+	  }	
+
+	function populateCats(jsonObj) {	      
+       for (var i = 0; i < jsonObj.length; i++) {
+		  var itemItem = document.createElement('li'),
+		  	  itemImageWrapper = document.createElement('div');
+		      itemName = document.createElement('h4'),
+		      itemShadow = document.createElement('div'),
+		  	  itemImage = document.createElement('img');	  		  	  
+		  	  	
+		  	  itemItem.className = "category-item";
+		  	  itemShadow.className = "shadow";	
+		  	  
+		      itemName.textContent = jsonObj[i].title;
+		      itemImage.src = jsonObj[i].img;	
+		      
+		      itemImageWrapper.appendChild(itemImage);
+		      itemImageWrapper.appendChild(itemShadow);
+		      itemItem.appendChild(itemImageWrapper);	
+		      itemItem.appendChild(itemName);	
+		      itemImageWrapper.style.background = jsonObj[i].color;
+		      itemShadow.style.background = jsonObj[i].color;
+		      
+		      categoryList.appendChild(itemItem);        
+       }	
+	} 	   	
 
   </script>  
 
