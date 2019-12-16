@@ -4,7 +4,7 @@ body {
   font-family: "Poppins", sans-serif; }
 
 #listTabs {
-  margin-top: 40px; }
+  margin-top: 20px; }
 
 .nav-tabs {
   border: 0;
@@ -121,10 +121,16 @@ body {
 
 .category-list {
   padding-top: 20px; }
+  .category-list ul {
+    list-style: none;
+    padding: 0;
+    height: 480px;
+    overflow: scroll; }
 
 .category-item {
-  margin-bottom: 15px; }
-  .category-item-image {
+  margin-bottom: 15px;
+  cursor: pointer; }
+  .category-item > div {
     display: inline-block;
     -webkit-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -134,7 +140,7 @@ body {
     width: 38px;
     height: 38px;
     vertical-align: middle; }
-    .category-item-image img {
+    .category-item > div img {
       position: absolute;
       top: 0;
       left: 0;
