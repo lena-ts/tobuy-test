@@ -36,11 +36,12 @@ $indent-base: 20px;
 body {
 	padding: $indent-base;
 	font-family: "Poppins", sans-serif;
+	background-color: #fafafa;
 }
 
 //Tabs
 #listTabs {
-	margin-top: $indent-base*2;
+	margin-top: $indent-base;
 }
 
 .nav-tabs {
@@ -51,12 +52,14 @@ body {
 		border: 0;
 		color: $color-gray;
 		padding: 0;
-		margin-right: $indent-base*1.5;
+		margin-right: 20px;
 		font-weight: 400;
-		font-size: 20px;
+		font-size: 24px;
+		background: transparent;
 		
 		&.active {
 			color: $color-black;
+			background: transparent;
 
 			&:after {
 				content: " ";
@@ -186,10 +189,18 @@ body {
 //Category list
 .category-list {
 	padding-top: 20px;
+	ul {
+		list-style: none;
+		padding: 0;
+		height: 480px;
+		overflow: scroll;
+	}
 }
 .category-item {
 	margin-bottom: 15px;
-	&-image {
+	cursor: pointer;
+	
+	>div {
 		display: inline-block;
 		@include border-radius(10px);
 		margin-right: 25px;
@@ -211,7 +222,7 @@ body {
 		display: inline-block;
 		font-size: 16px;
 		cursor: pointer;
-		font-weight: 400;
+		font-weight: 500;
 	}	
 	
 	&[data-category="fish"] {
