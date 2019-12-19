@@ -1,0 +1,62 @@
+[
+  {
+    "img": "images/milk.png",
+    "title": "Dairy",
+    "color": "#C5E4F8"
+  },
+  {
+    "img": "images/croissan.png",
+    "title": "Bakery",
+    "color": "#CDC8BF"
+  },
+  {
+    "img": "images/melon.png",
+    "title": "Fresh fruits",
+    "color": "#F3CE80"
+  },
+  {
+    "img": "images/cauliflower.png",
+    "title": "Vegetables",
+    "color": "#9AD586"
+  },
+  {
+    "img": "images/donuts.png",
+    "title": "Sweeties",
+    "color": "#F3AAD2"
+  },
+  {
+    "img": "images/hazelnut.png",
+    "title": "Nuts & Dried fruits",
+    "color": "#fcf2cf"
+  },
+  {
+    "img": "images/halibut.png",
+    "title": "Fish",
+    "color": "#82c0e5"
+  },
+  {
+    "img": "images/ham.png",
+    "title": "Meat",
+    "color": "#e8879a"
+  },
+  {
+    "img": "images/salt.png",
+    "title": "Ingredients & Species",
+    "color": "#f7e5cf"
+  },  
+  {
+    "img": "images/soap.png",
+    "title": "Household",
+    "color": "#eccfeb"
+  },
+  {
+    "img": "images/buckwheat_porridge.png",
+    "title": "Cereal",
+    "color": "#eecdcc"
+  },
+  {
+    "img": "images/pineapple_juice.png",
+    "title": "Beverages",
+    "color": "#99ded8"
+  }            
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "img": "images/buckwheat_porridge.png",
+    "title": "Buckweat porridge",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/oatmeal.png",
+    "title": "Oatmeal",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/cornflakes.png",
+    "title": "Cornflakes",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/flour.png",
+    "title": "Flour",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/muesli.png",
+    "title": "Muesli",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/pasta.png",
+    "title": "Pasta",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/rice.png",
+    "title": "Rice",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/semolina.png",
+    "title": "Semolina",
+    "color": "#E9E9E9"
+  }       
+]

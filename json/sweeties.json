@@ -1,0 +1,37 @@
+[
+  {
+    "img": "images/chocolate_bar.png",
+    "title": "Chocolate bar",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/milk_chocolate.png",
+    "title": "Milk chocolate",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/chocolate_paste.png",
+    "title": "Chocolate paste",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/cookies.png",
+    "title": "Cookies",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/donuts.png",
+    "title": "Donuts",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/candies.png",
+    "title": "Candies",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/dark_chocolate.png",
+    "title": "Dark Chocolate",
+    "color": "#E9E9E9"
+  }              
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "img": "images/apples.png",
+    "title": "Apples",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/avocados.png",
+    "title": "Avocados",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/bananas.png",
+    "title": "Bananas",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/berries.png",
+    "title": "Berries",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/coconut.png",
+    "title": "Coconut",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/grapefruit.png",
+    "title": "Grapefruit",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/grapes.png",
+    "title": "Grapes",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/kiwis.png",
+    "title": "Kiwis",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/melon.png",
+    "title": "Melon",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/lemons.png",
+    "title": "Lemons",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/oranges.png",
+    "title": "Oranges",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/pears.png",
+    "title": "Pears",
+    "color": "#E9E9E9"
+  }               
+]

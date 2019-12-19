@@ -1,0 +1,62 @@
+[
+  {
+    "img": "images/asparagus.png",
+    "title": "Asparagus",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/broccoli.png",
+    "title": "Broccoli",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/carrots.png",
+    "title": "Carrot",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/cauliflower.png",
+    "title": "Cauliflower",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/celery.png",
+    "title": "Celery",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/cucumber.png",
+    "title": "Cucumber",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/garlic.png",
+    "title": "Garlic",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/greens.png",
+    "title": "Greens",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/lettuce.png",
+    "title": "Lettuce",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/mushrooms.png",
+    "title": "Mushrooms",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/onions.png",
+    "title": "Onions",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/spinach.png",
+    "title": "Spinach",
+    "color": "#E9E9E9"
+  }               
+]

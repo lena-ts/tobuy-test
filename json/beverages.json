@@ -1,0 +1,47 @@
+[
+  {
+    "img": "images/apple_juice.png",
+    "title": "Apple juice",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/beer.png",
+    "title": "Beer",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/gin.png",
+    "title": "Gin",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/orange_juice.png",
+    "title": "Orange juice",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/tomato_juice.png",
+    "title": "Tomato juice",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/water.png",
+    "title": "Water",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/whiskey.png",
+    "title": "Whiskey",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/white_wine.png",
+    "title": "White wine",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/vodka.png",
+    "title": "Vodka",
+    "color": "#E9E9E9"
+  }    
+]

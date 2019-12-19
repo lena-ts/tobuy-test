@@ -1,0 +1,42 @@
+[
+  {
+    "img": "images/bacon.png",
+    "title": "Bacon",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/beef.png",
+    "title": "Beef",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/chicken.png",
+    "title": "Chicken",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/ground_beef.png",
+    "title": "Ground beef",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/ham.png",
+    "title": "Ham",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/lunchmeat.png",
+    "title": "Lunchmeat",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/pork.png",
+    "title": "Pork",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/sausage.png",
+    "title": "Sausage",
+    "color": "#E9E9E9"
+  }        
+]

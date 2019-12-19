@@ -17,7 +17,6 @@
 </head>
 
 <body>
-<!--   <div class="like_button_container" data-commentid="1"></div> -->
 	<div class="tabs-wrapper">
 		<ul class="nav nav-tabs" id="listTabs" role="tablist">
 			<li class="nav-item">
@@ -30,10 +29,25 @@
 		<div class="remove-icon">
 			<div class="icon"></div>
 		</div>
+		<div class="remove-message">
+			<div class="remove-message-text">Clear <span></span>?</div>
+			<div class="remove-message-buttons">
+				<div class="remove-button remove-button-yes">Yes</div>
+				<div class="remove-button remove-button-no">No</div>
+			</div>
+		</div>
 	</div>
 	<div class="tab-content" id="listContent">
 	  <div class="tab-pane fade show active" id="today" role="tabpanel" aria-labelledby="today-list">
 	      <div class=" text-center items items-list">
+		      <div class="empty-list">
+			      <div class="empty-list-text">Let's add some items to your list</div>
+			      <div class="empty-list-add-items-toggle-wrap">
+			      	<div class="empty-list-add-items-toggle">+</div>
+			      	<div class="shadow"></div>
+			      </div>
+			      <img src="images/empty-bag/empty-bag.png"/>
+		      </div>
 		  <ul class="row"></ul>
 	      </div>  		  
 	  </div>
@@ -73,8 +87,13 @@
 			<rect width="36" height="4" rx="2" fill="#E9E9E9"/>
 			</svg>			
 		</div>
-		<div class="category-title">Meat</div>		
-		<div class="category-content">Content</div>
+		<div class="category-view-close"></div>
+		<div class="category-title"></div>		
+		<div class="category-content">
+			<div class="items-list">
+			<ul></ul>
+			</div>
+		</div>
 	</div>	
 
 
@@ -82,128 +101,9 @@
   <script src="vendor/jquery/jquery.slim.min.js"></script>
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
-    <!-- Load React. -->
-    <!-- Note: when deploying, replace "development.js" with "production.min.js". -->  
-<!--
-   <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
-   <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>  
-   <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
--->
-   
-    <!-- Load our React component. -->
-<!--     <script src="js/like_button.js"></script>    -->
-  
-  <script>
-	  var listWrapper = document.querySelector('.items ul');
-	  
-	  var requestURL = 'items.json';
-	  var request = new XMLHttpRequest();
-    
-	  request.open('GET', requestURL);
-	  request.responseType = 'json';
-	  request.send();    
-	
-	  request.onload = function() {
-	 	 var itemsList = request.response;
-	 	 populateItems(itemsList, removeItem);
-		}	 
-  	       
-	function populateItems(jsonObj, callback) {	       
-       for (var i = 0; i < jsonObj.length; i++) {
-		  var itemItem = document.createElement('li'),
-		  	  itemImageWrapper = document.createElement('div');
-		      itemName = document.createElement('h4'),
-		      itemShadow = document.createElement('div'),
-		  	  itemImage = document.createElement('img');	  		  	  
-		  	  	
-		  	  itemItem.className = "item col-xs-4 col-sm-4 col-md-4";
-		  	  itemShadow.className = "shadow";	
-		  	  
-		      itemName.textContent = jsonObj[i].title;
-		      itemImage.src = jsonObj[i].img;	
-		      
-		      itemImageWrapper.appendChild(itemImage);
-		      itemImageWrapper.appendChild(itemShadow);
-		      itemItem.appendChild(itemImageWrapper);	
-		      itemItem.appendChild(itemName);	
-		      itemImageWrapper.style.background = jsonObj[i].color;
-		      itemShadow.style.background = jsonObj[i].color;
-		      
-		      listWrapper.appendChild(itemItem);        
-       }	
-       
-       callback();
-	} 
-	function removeItem(list) {	
-		
-		for (i = 0; i <= $('.items .item').length - 1; i++) {
-			var current = $('.items .item').eq(i);
-			current.attr('data-index', i);
-			
-			
-			console.log(current, $('.items .item').length);
 
-			
-			function showMessage() {
-				$('.empty-bag').fadeIn();
-			}
-		}
-		
-			$('.items .item').click(function(i){
-				$(this).fadeOut('slow');
-				$('#recent .recent-items ul').prepend($(this).clone());
-			});		
-		
-	}
-		
-	function insertItem() {
-		$('.items .item').eq(4).insertAfter($('.items .item').eq(7))
-	}
-	
-	$('.footer-panel-toggle').click(function(){
-		$('.footer-panel').toggleClass('up');
-	});
-	
-	var categoryList = document.querySelector('.category-list ul');
-	  var requestCatURL = 'categories.json';
-	  var requestCat = new XMLHttpRequest();
-    
-	  requestCat.open('GET', requestCatURL);
-	  requestCat.responseType = 'json';
-	  requestCat.send();    
-	
-	  requestCat.onload = function() {
-	 	 var categoryList = requestCat.response;
-	 	 populateCats(categoryList);
-	  }	
+	<script src="js/script.js"></script> 
 
-	function populateCats(jsonObj) {	      
-       for (var i = 0; i < jsonObj.length; i++) {
-		  var itemItem = document.createElement('li'),
-		  	  itemImageWrapper = document.createElement('div');
-		      itemName = document.createElement('h4'),
-		      itemShadow = document.createElement('div'),
-		  	  itemImage = document.createElement('img');	  		  	  
-		  	  	
-		  	  itemItem.className = "category-item";
-		  	  itemShadow.className = "shadow";	
-		  	  
-		      itemName.textContent = jsonObj[i].title;
-		      itemImage.src = jsonObj[i].img;	
-		      
-		      itemImageWrapper.appendChild(itemImage);
-		      itemImageWrapper.appendChild(itemShadow);
-		      itemItem.appendChild(itemImageWrapper);	
-		      itemItem.appendChild(itemName);	
-		      itemImageWrapper.style.background = jsonObj[i].color;
-		      itemShadow.style.background = jsonObj[i].color;
-		      
-		      categoryList.appendChild(itemItem);        
-       }	
-	} 	   	
-
-  </script>  
 
 </body>
 

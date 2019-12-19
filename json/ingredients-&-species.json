@@ -1,0 +1,37 @@
+[
+  {
+    "img": "images/salt.png",
+    "title": "Salt",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/ginger.png",
+    "title": "Ginger",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/pepper.png",
+    "title": "pepper",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/sugar.png",
+    "title": "Sugar",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/olive_oil.png",
+    "title": "Olive oil",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/sunflower_oil.png",
+    "title": "Sunflower oil",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/wasabi.png",
+    "title": "Wasabi",
+    "color": "#E9E9E9"
+  }            
+]

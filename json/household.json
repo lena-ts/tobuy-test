@@ -1,0 +1,57 @@
+[
+  {
+    "img": "images/soap.png",
+    "title": "Soap",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/batteries.png",
+    "title": "Batteries",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/blades.png",
+    "title": "Blades",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/candles.png",
+    "title": "Candles",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/dishwasher_tablets.png",
+    "title": "Dishwasher tablets",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/face_cream.png",
+    "title": "Face cream",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/foil.png",
+    "title": "Foil",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/garbage_bags.png",
+    "title": "Garbage bags",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/nail_polish.png",
+    "title": "Nail polish",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/plastic_wrap.png",
+    "title": "Plastic wrap",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/parchment_paper.png",
+    "title": "Parchment paper",
+    "color": "#E9E9E9"
+  }             
+]

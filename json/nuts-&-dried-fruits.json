@@ -1,0 +1,27 @@
+[
+  {
+    "img": "images/almond.png",
+    "title": "Almond",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/hazelnut.png",
+    "title": "Hazelnut",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/peanut.png",
+    "title": "Peanut",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/pistachios.png",
+    "title": "Pistachios",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/walnut.png",
+    "title": "Walnut",
+    "color": "#E9E9E9"
+  }        
+]

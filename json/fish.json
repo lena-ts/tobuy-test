@@ -1,0 +1,47 @@
+[
+  {
+    "img": "images/black_caviar.png",
+    "title": "Black caviar",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/red_caviar.png",
+    "title": "Red caviar",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/halibut.png",
+    "title": "Halibut",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/salmon.png",
+    "title": "Salmon",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/tuna.png",
+    "title": "Tuna",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/shrimps.png",
+    "title": "Shripms",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/octopus.png",
+    "title": "Octopus",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/oysters.png",
+    "title": "Oysters",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/mackerel.png",
+    "title": "Mackerel",
+    "color": "#E9E9E9"
+  }           
+]

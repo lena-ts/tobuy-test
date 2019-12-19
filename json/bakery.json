@@ -1,0 +1,42 @@
+[
+  {
+    "img": "images/bread.png",
+    "title": "Bread",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/buns.png",
+    "title": "Buns",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/cheesecake.png",
+    "title": "Cheesecake",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/croissan.png",
+    "title": "Croissan",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/cupcakes.png",
+    "title": "Cupcakes",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/muffins.png",
+    "title": "Muffins",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/cake.png",
+    "title": "Cake",
+    "color": "#E9E9E9"
+  },
+  {
+    "img": "images/ciabatta.png",
+    "title": "Ciabatta",
+    "color": "#E9E9E9"
+  }              
+]
